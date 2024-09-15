@@ -135,6 +135,12 @@ h2 {
   color: var(--accent-color);
 }
 
+.experience-item a {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+}
+
 ul {
   padding-left: 1rem;
 }
