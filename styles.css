@@ -46,13 +46,13 @@ footer {
 a.download {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 a.download img {
   transition: transform 0.2s;
   height: 3rem;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 a.download:hover img {
@@ -112,6 +112,13 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1.4rem;
+}
+
+.recent-item:hover {
+  background-color: #d6d6d6;
+  transform: scale(1.02);
+  transition: transform 0.25s;
 }
 
 .experience-item {
