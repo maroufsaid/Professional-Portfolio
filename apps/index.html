@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My iOS Apps</title>
+    <style>
+        :root {
+            --text-primary: #1A1A1C;
+            --text-secondary: #666666;
+            --card-background: #FFFFFF;
+            --app-background: #F8F8F8;
+            --accent-primary: #007AFF;
+            --purple: #B4A0FF;
+            --coral: #FF8787;
+            --spring-rain: #96DED1;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            padding: 24px;
+            background-color: var(--app-background);
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+
+        .app-card {
+            background: var(--card-background);
+            border-radius: 24px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .app-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .icon-container {
+            width: 64px;
+            height: 64px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .purple-bg {
+            background-color: var(--purple);
+        }
+
+        .coral-bg {
+            background-color: var(--coral);
+        }
+
+        .spring-rain-bg {
+            background-color: var(--spring-rain);
+        }
+
+        .app-icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        .app-details {
+            flex: 1;
+        }
+
+        .app-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .app-description {
+            font-size: 17px;
+            color: var(--text-secondary);
+        }
+
+        .chevron {
+            color: var(--text-secondary);
+            font-size: 20px;
+            margin-left: 16px;
+        }
+
+        /* Background icons */
+        .background-icons {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .background-icon {
+            position: absolute;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My iOS Apps</h1>
+        <p class="subtitle">A collection of thoughtfully crafted iOS applications</p>
+
+        <a href="#" class="app-card">
+            <div class="icon-container purple-bg">
+                <img src="happits-icon.png" alt="Happits" class="app-icon">
+            </div>
+            <div class="app-details">
+                <div class="app-title">Happits</div>
+                <div class="app-description">Private, on-device habit building for a happier you!</div>
+            </div>
+            <span class="chevron">›</span>
+        </a>
+
+        <a href="#" class="app-card">
+            <div class="icon-container coral-bg">
+                <img src="my-khatma-icon.png" alt="My Khatma - Holy Quran" class="app-icon">
+            </div>
+            <div class="app-details">
+                <div class="app-title">My Khatma - Holy Quran</div>
+                <div class="app-description">Your journey to completing the Quran.</div>
+            </div>
+            <span class="chevron">›</span>
+        </a>
+
+        <!-- <a href="#" class="app-card">
+            <div class="icon-container spring-rain-bg">
+                <img src="app3-icon.png" alt="App 3" class="app-icon">
+            </div>
+            <div class="app-details">
+                <div class="app-title">App 3</div>
+                <div class="app-description">Description of your third amazing iOS app</div>
+            </div>
+            <span class="chevron">›</span>
+        </a> -->
+    </div>
+
+    <!-- Background icons -->
+    <div class="background-icons" id="backgroundIcons"></div>
+
+    <script>
+        // Add background icons
+        const icons = ['★', '♥', '●', '◆', '▲', '■'];
+        const container = document.getElementById('backgroundIcons');
+
+        for (let i = 0; i < 50; i++) {
+            const icon = document.createElement('div');
+            icon.className = 'background-icon';
+            icon.textContent = icons[Math.floor(Math.random() * icons.length)];
+            icon.style.left = `${Math.random() * 100}%`;
+            icon.style.top = `${Math.random() * 100}%`;
+            icon.style.transform = `rotate(${Math.random() * 360}deg)`;
+            container.appendChild(icon);
+        }
+    </script>
+</body>
+</html>
