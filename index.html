@@ -3,41 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Said Marouf Portfolio</title>
+    <title>Said Marouf - Engineering Leader, iOS Engineer, & PhD | Portfolio</title>
+    <meta name="description" content="Said Marouf is an iOS Developer, Engineering Leader, and PhD with experience at Zalando. Featured by Apple, passionate about mobile development and leadership." />
+    <meta name="keywords" content="Said Marouf, iOS Developer, Engineering Leader, Mobile Development, SwiftUI, Swift, Zalando, PhD, Portfolio" />
+    <meta name="author" content="Said Marouf" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Said Marouf - iOS Developer & Engineering Leader" />
+    <meta property="og:description" content="Portfolio of Said Marouf, iOS Developer and Engineering Leader with experience at Zalando. Featured by Apple." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://saidmarouf.com" />
+    <!-- Add an og:image tag with your profile photo URL when available -->
+    
+    <!-- Favicon - Add these files to your project -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    
     <link href="styles.css" rel="stylesheet" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://saidmarouf.com" />
   </head>
   <body>
     <div class="container">
       <header>
         <div class="header-content">
           <h1>Said Marouf, PhD</h1>
-          <p class="tagline">Father ❤️ | Passionate Leader |  iOS Dev - featured by Apple</p>
+          <p class="tagline">Father ❤️ | Passionate Engineering Leader | iOS Developer - featured by Apple</p>
           <p class="tagline">Always learning, and exploring</p>
-          <a href="mailto:marouf.said@gmail.com" class="get-in-touch">Get in Touch</a>
+          <a href="mailto:marouf.said@gmail.com" class="get-in-touch" aria-label="Contact Said Marouf via email">Get in Touch</a>
         </div>
 
         <div class="socials">
           <ul class="media">
             <li>
-              <a target="_blank" href="https://x.com/said_thedr">
-                <img src="img/socials/x.svg" alt="X" />
+              <a target="_blank" href="https://x.com/said_thedr" aria-label="Said Marouf on X (Twitter)" rel="noopener">
+                <img src="img/socials/x.svg" alt="X (Twitter)" />
                 <span>X.com</span>
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://www.linkedin.com/in/saidmarouf">
+              <a target="_blank" href="https://www.linkedin.com/in/saidmarouf" aria-label="Said Marouf on LinkedIn" rel="noopener">
                 <img src="img/socials/linkedin.png" alt="LinkedIn" />
                 <span>LinkedIn</span>
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://www.github.com/maroufsaid/">
+              <a target="_blank" href="https://www.github.com/maroufsaid/" aria-label="Said Marouf on GitHub" rel="noopener">
                 <img src="img/socials/github.svg" alt="Github" />
                 <span>Github</span>
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://www.instagram.com/said.thedr/">
+              <a target="_blank" href="https://www.instagram.com/said.thedr/" aria-label="Said Marouf on Instagram" rel="noopener">
                 <img src="img/socials/instagram.svg" alt="Instagram" />
                 <span>Instagram</span>
               </a>
@@ -46,185 +64,226 @@
         </div>
       </header>
 
-      <section class="section">
-        <h2>Latest Creations</h2>
-        <div class="app-cards">
-          <a 
-            href="https://apps.apple.com/app/apple-store/id6636491845?pt=80462&ct=saidmarouf&mt=8"
-            class="app-card"
-            target="_blank"
-            rel="noopener"
-          >
-            <div class="icon-container">
-              <img src="apps/images/trio-icon.png" alt="Trio App" class="app-icon">
-            </div>
-            <div class="app-details">
-              <div class="app-title">Trio: Mindful ToDo List</div>
-              <div class="app-description">Simplify, Focus, Achieve 🚀</div>
-            </div>
-            <span class="chevron">›</span>
-          </a>
+      <main>
+        <section class="section" id="latest-creations">
+          <h2>Latest Creations</h2>
+          <div class="app-cards">
+            <a 
+              href="https://apps.apple.com/app/apple-store/id6636491845?pt=80462&ct=saidmarouf&mt=8"
+              class="app-card"
+              target="_blank"
+              rel="noopener"
+              aria-label="Trio: Mindful ToDo List iOS App"
+            >
+              <div class="icon-container">
+                <img src="apps/images/trio-icon.png" alt="Trio App Icon" class="app-icon">
+              </div>
+              <div class="app-details">
+                <div class="app-title">Trio: Mindful ToDo List</div>
+                <div class="app-description">Simplify, Focus, Achieve 🚀</div>
+              </div>
+              <span class="chevron">›</span>
+            </a>
 
-          <a 
-            href="https://apps.apple.com/us/app/my-khatma-quran-reader/id6670431429?utm_source=lp&utm_medium=lp&utm_campaign=launch" 
-            class="app-card"
-            target="_blank"
-            rel="noopener"
-          >
-            <div class="icon-container">
-              <img src="apps/images/my-khatma-icon.png" alt="My Khatma" class="app-icon">
-            </div>
-            <div class="app-details">
-              <div class="app-title">My Khatma</div>
-              <div class="app-description">Turn Quran recitation into a daily habit, one Ayah at a time.</div>
-            </div>
-            <span class="chevron">›</span>
-          </a>
+            <a 
+              href="https://apps.apple.com/us/app/my-khatma-quran-reader/id6670431429?utm_source=lp&utm_medium=lp&utm_campaign=launch" 
+              class="app-card"
+              target="_blank"
+              rel="noopener"
+              aria-label="My Khatma Quran Reader iOS App"
+            >
+              <div class="icon-container">
+                <img src="apps/images/my-khatma-icon.png" alt="My Khatma App Icon" class="app-icon">
+              </div>
+              <div class="app-details">
+                <div class="app-title">My Khatma</div>
+                <div class="app-description">Turn Quran recitation into a daily habit, one Ayah at a time.</div>
+              </div>
+              <span class="chevron">›</span>
+            </a>
 
-          <div class="app-card">
-            <div class="icon-container">
-              <div class="placeholder-icon">🚀</div>
-            </div>
-            <div class="app-details">
-              <div class="app-title">SAAS Idea</div>
-              <div class="app-description">Help Mobile App developers ship and launch faster!</div>
+            <div class="app-card">
+              <div class="icon-container">
+                <div class="placeholder-icon" aria-label="Future SAAS Project">🚀</div>
+              </div>
+              <div class="app-details">
+                <div class="app-title">SAAS Idea</div>
+                <div class="app-description">Help Mobile App developers ship and launch faster!</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="view-all-wrapper">
-          <a href="apps/index.html" class="view-all-apps get-in-touch">View All Apps</a>
-        </div>
-      </section>
+          <div class="view-all-wrapper">
+            <a href="apps/index.html" class="view-all-apps get-in-touch" aria-label="View all iOS apps by Said Marouf">View All Apps</a>
+          </div>
+        </section>
 
-      <section class="section">
-        <h2>Experience</h2>
-        <div class="experience-item">
-          <h3>Head of Engineering</h3>
-          <p class="company">Zalando SE</p>
-          <p class="date">January 2022 - July 2024 | Berlin, Germany</p>
-          <ul>
-            <li>Led 20+ engineers across multiple teams</li>
-            <li>Implemented data-driven delivery plans</li>
-            <li>Established Innovation Days, boosting team engagement</li>
-            <li>Enabled promotions across various seniority levels</li>
-          </ul>
-        </div>
-        <div class="experience-item">
-          <h3>Engineering Manager</h3>
-          <p class="company">Zalando SE</p>
-          <p class="date">July 2019 - December 2021 | Berlin, Germany</p>
-          <ul>
-            <li>Managed 12 engineers for Product Detail Page and Customer reviews</li>
-            <li>Improved development processes and product quality</li>
-            <li>Aligned feature development with business objectives</li>
-          </ul>
-        </div>
-        <div class="experience-item">
-          <h3>Tech Lead</h3>
-          <p class="company">Zalando SE</p>
-          <p class="date">July 2018 - July 2019 | Berlin, Germany</p>
-          <ul>
-            <li>Led key feature development for iOS and Android apps</li>
-            <li>Provided technical guidance and mentorship</li>
-            <li>Collaborated on feature requirements and priorities</li>
-          </ul>
-        </div>
+        <section class="section" id="experience">
+          <h2>Experience</h2>
+          <div class="experience-item">
+            <h3>Head of Engineering</h3>
+            <p class="company">Zalando SE</p>
+            <p class="date">January 2022 - July 2024 | Berlin, Germany</p>
+            <ul>
+              <li>Led 20+ engineers across multiple teams</li>
+              <li>Implemented data-driven delivery plans</li>
+              <li>Established Innovation Days, boosting team engagement</li>
+              <li>Enabled promotions across various seniority levels</li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h3>Engineering Manager</h3>
+            <p class="company">Zalando SE</p>
+            <p class="date">July 2019 - December 2021 | Berlin, Germany</p>
+            <ul>
+              <li>Managed 12 engineers for Product Detail Page and Customer reviews</li>
+              <li>Improved development processes and product quality</li>
+              <li>Aligned feature development with business objectives</li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h3>Tech Lead</h3>
+            <p class="company">Zalando SE</p>
+            <p class="date">July 2018 - July 2019 | Berlin, Germany</p>
+            <ul>
+              <li>Led key feature development for iOS and Android apps</li>
+              <li>Provided technical guidance and mentorship</li>
+              <li>Collaborated on feature requirements and priorities</li>
+            </ul>
+          </div>
 
-        <div class="experience-item">
-          <h3>Senior iOS Engineer</h3>
-          <p class="company">Zalando SE</p>
-          <p class="date">October 2015 - July 2018 | Berlin, Germany</p>
-          <ul>
-            <li>Developed and maintained Zalando Fashion Store iOS app using Objective-C and Swift.</li>
-            <li>Managed App Store release process and practiced test-driven development.</li>
-            <li>Mentored mid-level and junior engineers, fostering their professional growth.</li>
-          </ul>
-        </div>
+          <div class="experience-item">
+            <h3>Senior iOS Engineer</h3>
+            <p class="company">Zalando SE</p>
+            <p class="date">October 2015 - July 2018 | Berlin, Germany</p>
+            <ul>
+              <li>Developed and maintained Zalando Fashion Store iOS app using Objective-C and Swift.</li>
+              <li>Managed App Store release process and practiced test-driven development.</li>
+              <li>Mentored mid-level and junior engineers, fostering their professional growth.</li>
+            </ul>
+          </div>
 
-        <div class="experience-item">
-          <h3>Senior iOS Engineer</h3>
-          <p class="company">Blloon</p>
-          <p class="date">January 2015 - September 2015 | Berlin, Germany</p>
-          <ul>
-            <li>Sole developer of e-book reader iOS app, using Objective-C and Swift.</li>
-            <li>Delivered key features including push notifications, in-app purchases, and theming.</li>
-          </ul>
-        </div>
+          <div class="experience-item">
+            <h3>Senior iOS Engineer</h3>
+            <p class="company">Blloon</p>
+            <p class="date">January 2015 - September 2015 | Berlin, Germany</p>
+            <ul>
+              <li>Sole developer of e-book reader iOS app, using Objective-C and Swift.</li>
+              <li>Delivered key features including push notifications, in-app purchases, and theming.</li>
+            </ul>
+          </div>
 
-        <div class="experience-item">
-          <h3>Dean of the IT College</h3>
-          <p class="company">University of Palestine</p>
-          <p class="date">July 2013 - December 2014 | Gaza, Palestine</p>
-          <ul>
-            <li>Managed academic programs, faculty, and administrative operations.</li>
-            <li>Enhanced teaching quality, research initiatives, and community service.</li>
-            <li>Established industry partnerships for student internships and research projects.</li>
-            <li>Represented the college in university committees and external engagements.</li>
-          </ul>
-        </div>
+          <div class="experience-item">
+            <h3>Dean of the IT College</h3>
+            <p class="company">University of Palestine</p>
+            <p class="date">July 2013 - December 2014 | Gaza, Palestine</p>
+            <ul>
+              <li>Managed academic programs, faculty, and administrative operations.</li>
+              <li>Enhanced teaching quality, research initiatives, and community service.</li>
+              <li>Established industry partnerships for student internships and research projects.</li>
+              <li>Represented the college in university committees and external engagements.</li>
+            </ul>
+          </div>
 
-        <div class="experience-item">
-          <h3>Assistant Professor</h3>
-          <p class="company">University of Palestine</p>
-          <p class="date">February 2013 - December 2014 | Gaza, Palestine</p>
-          <ul>
-            <li>Instructed undergraduate courses in Mobile Development, Computer Science, and Quality Assurance.</li>
-            <li>Mentored students on academic and career-related issues.</li>
-            <li>Contributed to curriculum development and academic governance initiatives.</li>
-          </ul>
-        </div>
+          <div class="experience-item">
+            <h3>Assistant Professor</h3>
+            <p class="company">University of Palestine</p>
+            <p class="date">February 2013 - December 2014 | Gaza, Palestine</p>
+            <ul>
+              <li>Instructed undergraduate courses in Mobile Development, Computer Science, and Quality Assurance.</li>
+              <li>Mentored students on academic and career-related issues.</li>
+              <li>Contributed to curriculum development and academic governance initiatives.</li>
+            </ul>
+          </div>
 
-        <div class="experience-item">
-          <h3>Indie iOS & Mac Developer</h3>
-          <p class="date">March 2009 - September 2015</p>
-          <ul>
-            <li>Developed various iOS and Mac apps, including Move (Step Tracker) and Osfoora (Twitter client).</li>
-            <li>Achieved top rankings in App Store: Top 10 in Social Networking (USA), Top 100 Overall (Japan).</li>
-          </ul>
-        </div>
-      </section>
+          <div class="experience-item">
+            <h3>Indie iOS & Mac Developer</h3>
+            <p class="date">March 2009 - September 2015</p>
+            <ul>
+              <li>Developed various iOS and Mac apps, including Move (Step Tracker) and Osfoora (Twitter client).</li>
+              <li>Achieved top rankings in App Store: Top 10 in Social Networking (USA), Top 100 Overall (Japan).</li>
+            </ul>
+          </div>
+        </section>
 
-      <section class="section">
-        <h2>Skills</h2>
-        <div class="skills">
-          <span class="skill">Team Leadership</span>
-          <span class="skill">Technical Project Management</span>
-          <span class="skill">Agile Methodologies</span>
-          <span class="skill">Strategic Planning</span>
-          <span class="skill">Leadership Mentoring</span>
-          <span class="skill">iOS Development</span>
-          <span class="skill">SwiftUI</span>
-          <span class="skill">Swift</span>
-          <span class="skill">Frontend Development</span>
-          <span class="skill">Caligraphy</span>
-        </div>
-      </section>
+        <section class="section" id="skills">
+          <h2>Skills</h2>
+          <div class="skills">
+            <span class="skill">Team Leadership</span>
+            <span class="skill">Technical Project Management</span>
+            <span class="skill">Agile Methodologies</span>
+            <span class="skill">Strategic Planning</span>
+            <span class="skill">Leadership Mentoring</span>
+            <span class="skill">iOS Development</span>
+            <span class="skill">SwiftUI</span>
+            <span class="skill">Swift</span>
+            <span class="skill">Frontend Development</span>
+            <span class="skill">Calligraphy</span>
+          </div>
+        </section>
 
-      <section class="section">
-        <h2>Education</h2>
-        <div class="experience-item">
-          <h3>PhD in Computing & Information Systems</h3>
-          <p class="company">University of North Carolina at Charlotte</p>
-          <p class="date">September 2008 - June 2012</p>
-          <p>GPA: 4.0</p>
-          <a target="_blank" href="https://scholar.google.com/citations?user=o9qBqhoAAAAJ">Google Scholar</a>
-        </div>
-        <div class="experience-item">
-          <h3>Master in Software Engineering</h3>
-          <p class="company">University of Wisconsin - La Crosse</p>
-          <p class="date">September 2006 - May 2008</p>
-          <p>GPA: 4.0</p>
-        </div>
-        <div class="experience-item">
-          <h3>Bachelor in Computer Engineering</h3>
-          <p class="company">Islamic University of Gaza</p>
-          <p class="date">January 2001 - June 2005 | Gaza, Palestine</p>
-          <p>GPA: 89.5%</p>
-        </div>
-      </section>
+        <section class="section" id="education">
+          <h2>Education</h2>
+          <div class="experience-item">
+            <h3>PhD in Computing & Information Systems</h3>
+            <p class="company">University of North Carolina at Charlotte</p>
+            <p class="date">September 2008 - June 2012</p>
+            <p>GPA: 4.0</p>
+            <a target="_blank" href="https://scholar.google.com/citations?user=o9qBqhoAAAAJ" rel="noopener" aria-label="View Said Marouf's publications on Google Scholar">Google Scholar</a>
+          </div>
+          <div class="experience-item">
+            <h3>Master in Software Engineering</h3>
+            <p class="company">University of Wisconsin - La Crosse</p>
+            <p class="date">September 2006 - May 2008</p>
+            <p>GPA: 4.0</p>
+          </div>
+          <div class="experience-item">
+            <h3>Bachelor in Computer Engineering</h3>
+            <p class="company">Islamic University of Gaza</p>
+            <p class="date">January 2001 - June 2005 | Gaza, Palestine</p>
+            <p>GPA: 89.5%</p>
+          </div>
+        </section>
+      </main>
+      
       <footer>
-        <a href="cv.pdf" class="download-cv">Download CV</a>
+        <a href="cv.pdf" class="download-cv" aria-label="Download Said Marouf's CV">Download CV</a>
+        <br/>
+        <br/>
+        <p class="copyright">&copy; <span id="current-year">2024</span> Said Marouf. All rights reserved.</p>
       </footer>
     </div>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Said Marouf",
+      "jobTitle": "iOS Developer & Engineering Leader",
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of North Carolina at Charlotte",
+          "sameAs": "https://www.uncc.edu/"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Wisconsin - La Crosse",
+          "sameAs": "https://www.uwlax.edu/"
+        }
+      ],
+      "sameAs": [
+        "https://x.com/said_thedr",
+        "https://www.linkedin.com/in/saidmarouf",
+        "https://www.github.com/maroufsaid/",
+        "https://www.instagram.com/said.thedr/"
+      ]
+    }
+    </script>
+    
+    <script>
+      // Set current year for copyright
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

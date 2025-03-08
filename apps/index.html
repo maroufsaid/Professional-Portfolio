@@ -3,50 +3,128 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My iOS Apps</title>
+        <title>iOS Apps by Said Marouf | Mobile Developer Featured by Apple</title>
+        <meta name="description" content="Explore iOS apps created by Said Marouf, including Trio, My Khatma Quran Reader, and Happits. Thoughtfully crafted mobile experiences.">
+        <meta name="keywords" content="iOS apps, Said Marouf, mobile apps, Trio app, My Khatma, Quran app, Happits, productivity apps">
+        <meta name="author" content="Said Marouf">
+        
+        <!-- Open Graph / Social Media -->
+        <meta property="og:title" content="iOS Apps by Said Marouf | Mobile Developer">
+        <meta property="og:description" content="Explore iOS apps created by Said Marouf, including Trio, My Khatma Quran Reader, and Happits.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://saidmarouf.com/apps/">
+        
+        <!-- Favicon -->
+        <link rel="icon" href="../favicon.ico">
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+        
         <link rel="stylesheet" href="styles.css">
+        
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://saidmarouf.com/apps/">
     </head>
 <body>
     <div class="container">
-        <h1>My iOS Apps</h1>
-        <p class="subtitle">A collection of thoughtfully crafted iOS applications</p>
+        <header>
+            <a href="../index.html" class="back-link" aria-label="Back to homepage">← Back to Portfolio</a>
+            <h1>My iOS Apps</h1>
+            <p class="subtitle">A collection of thoughtfully crafted iOS applications</p>
+        </header>
 
-        <a href="#" class="app-card" target="_blank" rel="noopener">
-            <div class="icon-container">
-                <img src="images/happits-icon.png" alt="Happits" class="app-icon">
-            </div>
-            <div class="app-details">
-                <div class="app-title">Happits: Happy Habits AI</div>
-                <div class="app-description">Private, on-device habit building for a happier you!</div>
-            </div>
-            <span class="chevron">›</span>
-        </a>
+        <main>
+            <a href="#" class="app-card" target="_blank" rel="noopener" aria-label="Happits: Happy Habits AI iOS App">
+                <div class="icon-container">
+                    <img src="images/happits-icon.png" alt="Happits App Icon" class="app-icon">
+                </div>
+                <div class="app-details">
+                    <div class="app-title">Happits: Happy Habits AI</div>
+                    <div class="app-description">Private, on-device habit building for a happier you!</div>
+                </div>
+                <span class="chevron">›</span>
+            </a>
 
-        <a href="https://apps.apple.com/us/app/my-khatma-quran-reader/id6670431429?utm_source=lp&utm_medium=lp&utm_campaign=launch" class="app-card" target="_blank" rel="noopener">
-            <div class="icon-container">
-                <img src="images/my-khatma-icon.png" alt="My Khatma - Holy Quran" class="app-icon">
-            </div>
-            <div class="app-details">
-                <div class="app-title">My Khatma - Holy Quran</div>
-                <div class="app-description">Your journey to completing the Quran.</div>
-            </div>
-            <span class="chevron">›</span>
-        </a>
+            <a href="https://apps.apple.com/us/app/my-khatma-quran-reader/id6670431429?utm_source=lp&utm_medium=lp&utm_campaign=launch" class="app-card" target="_blank" rel="noopener" aria-label="Quran Khatma iOS App">
+                <div class="icon-container">
+                    <img src="images/my-khatma-icon.png" alt="My Khatma App Icon" class="app-icon">
+                </div>
+                <div class="app-details">
+                    <div class="app-title">Quran Khatma</div>
+                    <div class="app-description">The premium Quran App experience.</div>
+                </div>
+                <span class="chevron">›</span>
+            </a>
 
-        <a href="https://apps.apple.com/app/apple-store/id6636491845?pt=80462&ct=homepage&mt=8" class="app-card" target="_blank" rel="noopener">
-            <div class="icon-container">
-                <img src="images/trio-icon.png" alt="Trio App - Simplify, Focus, Achieve" class="app-icon">
-            </div>
-            <div class="app-details">
-                <div class="app-title">Trio: Simplify, Focus, Achieve</div>
-                <div class="app-description">Your path to Mindful Productivity</div>
-            </div>
-            <span class="chevron">›</span>
-        </a>
+            <a href="https://apps.apple.com/app/apple-store/id6636491845?pt=80462&ct=homepage&mt=8" class="app-card" target="_blank" rel="noopener" aria-label="Trio: Simplify, Focus, Achieve iOS App">
+                <div class="icon-container">
+                    <img src="images/trio-icon.png" alt="Trio App Icon" class="app-icon">
+                </div>
+                <div class="app-details">
+                    <div class="app-title">Trio: Simplify, Focus, Achieve</div>
+                    <div class="app-description">Your path to Mindful Productivity</div>
+                </div>
+                <span class="chevron">›</span>
+            </a>
+        </main>
+        
+        <footer>
+            <p class="copyright">&copy; <span id="current-year">2024</span> Said Marouf. All rights reserved.</p>
+        </footer>
     </div>
 
     <!-- Background icons -->
     <div class="background-icons" id="backgroundIcons"></div>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "iOS Apps by Said Marouf",
+      "description": "A collection of thoughtfully crafted iOS applications by Said Marouf",
+      "author": {
+        "@type": "Person",
+        "name": "Said Marouf",
+        "url": "https://saidmarouf.com"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "SoftwareApplication",
+            "position": 1,
+            "name": "Happits: Happy Habits AI",
+            "description": "Private, on-device habit building for a happier you!",
+            "operatingSystem": "iOS",
+            "applicationCategory": "LifestyleApplication"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 2,
+            "name": "Quran Khatma",
+            "description": "The premium Quran App experience.",
+            "operatingSystem": "iOS",
+            "applicationCategory": "ReferenceApplication",
+            "offers": {
+              "@type": "Offer",
+              "url": "https://apps.apple.com/us/app/my-khatma-quran-reader/id6670431429?utm_source=lp&utm_medium=lp&utm_campaign=launch"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 3,
+            "name": "Trio: Simplify, Focus, Achieve",
+            "description": "Your path to Mindful Productivity",
+            "operatingSystem": "iOS",
+            "applicationCategory": "ProductivityApplication",
+            "offers": {
+              "@type": "Offer",
+              "url": "https://apps.apple.com/app/apple-store/id6636491845?pt=80462&ct=homepage&mt=8"
+            }
+          }
+        ]
+      }
+    }
+    </script>
 
     <script>
         // Add background icons
@@ -62,6 +140,9 @@
             icon.style.transform = `rotate(${Math.random() * 360}deg)`;
             container.appendChild(icon);
         }
+        
+        // Set current year for copyright
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
